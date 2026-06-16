@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import glob
 
-FileNames = np.array(glob.glob("RunResults/fort.*"))
+FileNames = np.array(glob.glob("RohanResults/fort.*"))
 FileArrangeIndex = np.array([int(FileItem.split(".")[-1]) for FileItem in FileNames])
 FileNames = FileNames[np.argsort(FileArrangeIndex)]
 XPlot = np.linspace(1000,15000,100)
